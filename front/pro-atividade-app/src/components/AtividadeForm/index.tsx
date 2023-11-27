@@ -32,8 +32,8 @@ export function AtividadeForm({ atividades, setAtividades, formValues, setFormVa
 
     useEffect(() => {
         //console.log(atividades);
-        //console.log((atividades.reduce((max, current) => (current.id > max.id ? current : max), atividades[0])?.id + 1 ?? 1));
-        setNextId((atividades.reduce((max, current) => (current.id > max.id ? current : max), atividades[0])?.id + 1 ?? 1));
+        const id = (atividades.reduce((max, current) => (current.id > max.id ? current : max), atividades[0])?.id + 1);
+        setNextId(isNaN(id) ? 1 : id);
     }, [atividades]);
 
 
