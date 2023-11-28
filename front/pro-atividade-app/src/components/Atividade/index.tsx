@@ -15,11 +15,11 @@ interface inputProps {
 export function AtividadeCard({ ativ, handleDeleteAtividade, handleGetAtividade }: inputProps) {
     function prioridadeLabel(param: string | undefined) {
         switch (param) {
-            case '1':
+            case '1' || "Baixa":
                 return 'Baixa';
-            case '2':
+            case '2' || 'Normal':
                 return 'Normal';
-            case '3':
+            case '3' || 'Alta':
                 return 'Alta';
             default:
                 return 'Undefined';
