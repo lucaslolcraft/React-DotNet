@@ -1,4 +1,4 @@
-import { AtividadeCard } from "../Atividade";
+import { AtividadeCard } from "../AtividadeCard";
 
 type Atividade = {
     id: number;
@@ -13,8 +13,7 @@ interface inputProps {
     handleGetAtividade: (id: number) => void;
 }
 
-export function AtividadesList({ handleDeleteAtividade, atividades, handleGetAtividade }: inputProps) {
-
+export function AtividadesList({ handleDeleteAtividade, atividades = [], handleGetAtividade }: inputProps) {
     return (
         <div className="mt-3">
             <ul className="list-group">

@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import api from '../../api/atividade';
 
 type Atividade = {
     id: number;
@@ -36,13 +37,24 @@ export function AtividadeForm({ atividades, setAtividades, formValues, setFormVa
         setNextId(isNaN(id) ? 1 : id);
     }, [atividades]);
 
-
+    const postAtivivade = async (ativ: Atividade) => {
+        try {
+            const response = await api.post('atividade', ativ);
+            return response.data;
+        } catch (error) {
+            console.error('Error posting data:', error);
+            throw error;
+        }
+    };
     const handleAddAtividade = () => {
 
         if (!isEdit) {
-            setAtividades([...atividades, { ...formValues, id: nextId }]);
-
-
+            //setAtividades([...atividades, { ...formValues, id: nextId }]);
+            postAtivivade({ ...formValues, id: nextId }).then((data) => {
+                setAtividades(data);
+            }).catch((error) => {
+                console.error('Error setting state:', error);
+            });
         } else {
             setAtividades(atividades.map(item => item.id === formValues.id ? formValues : item));
             setIsEdit(false);

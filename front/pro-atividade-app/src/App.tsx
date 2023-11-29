@@ -31,17 +31,13 @@ function App() {
         }
     };
 
-    const getAllCall = () => {
+    useEffect(() => {
         getAll().then((data) => {
             setAtividades(data);
 
         }).catch((error) => {
             console.error('Error setting state:', error);
         });
-    };
-
-    useEffect(() => {
-        getAllCall();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -51,11 +47,33 @@ function App() {
         setIsEdit(true);
     };
 
+    const deleteAtividade = async (id: number) => {
+        try {
+            const response = await api.delete('atividade/' + id);
+            return response.data;
+        } catch (error) {
+            console.error('Error deleting data:', error);
+            throw error;
+        }
+    };
+
 
     const handleDeleteAtividade = (id: number) => {
-        setAtividades(atividades.filter(atividade => atividade.id !== id));
+        deleteAtividade(id).then(() => {
+            getAll().then((data) => {
+                setAtividades(data);
+
+            }).catch((error) => {
+                console.error('Error setting state:', error);
+            });
+
+        }).catch((error) => {
+            console.error('Error setting state:', error);
+        });
+
+        //setAtividades(atividades.filter(atividade => atividade.id !== id));
     };
-    console.log(atividades);
+    //console.log(atividades);
     return (
         <>
             <AtividadeForm atividades={atividades} setAtividades={setAtividades} formValues={formValues} setFormValues={setFormValues} isEdit={isEdit} setIsEdit={setIsEdit} />
