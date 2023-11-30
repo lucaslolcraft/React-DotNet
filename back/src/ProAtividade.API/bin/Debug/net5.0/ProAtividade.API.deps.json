@@ -37,6 +37,8 @@
           "Microsoft.EntityFrameworkCore.Design": "5.0.10",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.10",
+          "ProAtividade.Data": "1.0.0",
+          "ProAtividade.Domain": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -702,6 +704,25 @@
         }
       },
       "System.Memory/4.5.3": {},
+      "ProAtividade.Data/1.0.0": {
+        "dependencies": {
+          "ProAtividade.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ProAtividade.Data.dll": {}
+        },
+        "compile": {
+          "ProAtividade.Data.dll": {}
+        }
+      },
+      "ProAtividade.Domain/1.0.0": {
+        "runtime": {
+          "ProAtividade.Domain.dll": {}
+        },
+        "compile": {
+          "ProAtividade.Domain.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2647,6 +2668,16 @@
       "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "ProAtividade.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProAtividade.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",

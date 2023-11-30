@@ -1,0 +1,12 @@
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\bin\Debug\net5.0\ProAtividade.Domain.deps.json
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\bin\Debug\net5.0\ProAtividade.Domain.dll
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\bin\Debug\net5.0\ref\ProAtividade.Domain.dll
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\bin\Debug\net5.0\ProAtividade.Domain.pdb
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\obj\Debug\net5.0\ProAtividade.Domain.csproj.AssemblyReference.cache
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\obj\Debug\net5.0\ProAtividade.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\obj\Debug\net5.0\ProAtividade.Domain.AssemblyInfoInputs.cache
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\obj\Debug\net5.0\ProAtividade.Domain.AssemblyInfo.cs
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\obj\Debug\net5.0\ProAtividade.Domain.csproj.CoreCompileInputs.cache
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\obj\Debug\net5.0\ProAtividade.Domain.dll
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\obj\Debug\net5.0\ref\ProAtividade.Domain.dll
+C:\Curso\udemy\ReactDotNet\back\src\ProAtividade.Domain\obj\Debug\net5.0\ProAtividade.Domain.pdb
