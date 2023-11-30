@@ -9,7 +9,7 @@ type Atividade = {
 
 interface inputProps {
     atividades: Atividade[];
-    handleDeleteAtividade: (id: number) => void;
+    handleDeleteAtividade: (ativ: Atividade) => void;
     handleGetAtividade: (id: number) => void;
 }
 

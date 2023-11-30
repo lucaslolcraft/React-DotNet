@@ -8,7 +8,7 @@ type Atividade = {
 interface inputProps {
     key: number;
     ativ: Atividade;
-    handleDeleteAtividade: (id: number) => void;
+    handleDeleteAtividade: (ativ: Atividade) => void;
     handleGetAtividade: (id: number) => void;
 }
 
@@ -46,7 +46,7 @@ export function AtividadeCard({ ativ, handleDeleteAtividade, handleGetAtividade 
                 <p className="card-text">{ativ.descricao}</p>
                 <div className='d-flex justify-content-end'>
                     <button className='btn btn-outline-primary btn-sm me-1' onClick={() => handleGetAtividade(ativ.id)}>Editar</button>
-                    <button className='btn btn-outline-danger btn-sm' onClick={() => handleDeleteAtividade(ativ.id)}>Deletar</button>
+                    <button className='btn btn-outline-danger btn-sm' onClick={() => handleDeleteAtividade(ativ)}>Deletar</button>
                 </div>
             </div>
         </div>
